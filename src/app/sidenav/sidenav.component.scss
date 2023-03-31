@@ -1,0 +1,41 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-sidenav-container {
+    height: 100%;
+}
+
+.mat-sidenav,
+.mat-sidenav-content {
+    padding: 16px;
+}
+
+.mat-sidenav {
+    background-color: rgb(152, 150, 150);
+    width: 200px;
+}
+
+
+
+.a {
+    text-align: right;
+    margin-top: 10dp;
+}
+
+.app-toolbar {
+    position: sticky;
+
+    top: 0;
+    /* Sets the sticky toolbar to be on top */
+    z-index: 1000;
+}
+
+.mat-accordion
+{
+    align-items: start;
+    display:list-item;
+    width: 100%;
+    
+   
+}

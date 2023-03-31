@@ -1,0 +1,31 @@
+
+
+<mat-card>
+    <mat-card-title align="center">Sample Data</mat-card-title>
+<mat-card-content>
+    <div >
+  
+       
+        
+        <table class="table table-striped">
+          <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let sample of Samples">
+              <td>{{ sample.id }}</td>
+              <td>{{ sample.name }}</td>
+              <td>{{ sample.username }}</td>
+              <td>{{ sample.email }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</mat-card-content>
+
+</mat-card>

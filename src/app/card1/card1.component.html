@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-title align="center">Enter Details:</mat-card-title>
+
+  <form class="details-form" [formGroup]="detailsForm" (ngSubmit)="detailsUser()" align="center">
+
+
+    <div class="input">
+      <label for="uname">Username: </label>
+      <input type="text" placeholder="Enter Username " formControlName="user" name="uname" id="uname" required>
+
+
+    </div>
+    <div class="input">
+      <label for="pwd">Password: </label>
+      <input type="password" placeholder="Enter Password " formControlName="password" name="pwd" id="pwd" required>
+
+      <div>
+
+        <button [disabled]="detailsForm.invalid" (click)=" onClick()" type="submit">Login</button>
+      </div>
+    </div>
+  </form>
+</mat-card>
